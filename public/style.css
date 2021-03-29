@@ -20,6 +20,11 @@ h2 {
     margin-top: 90px;
 }
 
+p {
+    color: #999;
+    font-size: 0.8rem;
+}
+
 .dark {
     background: #1b1919;
     color: #faf9f9;
@@ -30,6 +35,7 @@ a {
     color: #616f39;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 0.8rem;
 }
 
 a:hover {
@@ -46,4 +52,102 @@ a:hover {
 
 img {
     border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin: 1rem;
+}
+
+input,
+textarea {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.6rem 1rem;
+    border: none;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    color: #fff;
+    font-size: inherit;
+}
+
+textarea {
+    margin: 1rem auto;
+    width: 400px;
+    height: 200px;
+    display: block;
+}
+
+button {
+    background: #424642;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 25px;
+    color: #fff;
+    font-family: inherit;
+    margin: 20px 10px;
+    text-transform: uppercase;
+    outline: none;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.isError {
+    background: #fff;
+    color: #000;
+    border-left: 4px solid #111;
+    padding: 0.9rem 0.8rem;
+    margin: 1rem auto 1.5rem auto;
+    display: flex;
+    opacity: 1;
+    font-weight: lighter;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+    max-width: 15rem;
+    border-radius: 4px;
+    background: #c64756;
+    color: #fff;
+    border-color: #c64756;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+.isSent {
+    background: #fff;
+    color: #000;
+    border-left: 4px solid #111;
+    padding: 0.9rem 0.8rem;
+    margin: 1rem auto 1.5rem auto;
+    display: flex;
+    opacity: 1;
+    font-weight: lighter;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+    max-width: 15rem;
+    border-radius: 4px;
+    background: #96bb7c;
+    color: #fff;
+    border-color: #01916d;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
